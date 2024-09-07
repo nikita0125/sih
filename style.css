@@ -1,0 +1,201 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Section */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url('stu.jpeg'); /* replace with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+}
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Features Section */
+
+.features {
+    display: block;
+    padding: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60vh ;
+}
+
+
+
+.feature-card i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    margin: 20px;
+    margin-top: 8px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px); /* adjust width to fit three columns */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center; /* add this to center the image and content */
+}
+
+.feature-card img {
+    width: 100%; /* make the image full-width */
+    height: 300px; /* adjust the image height to your liking */
+    object-fit: cover; /* make the image cover the entire area */
+    border-radius: 10px 10px 0 0; /* add a rounded corner to the top of the image */
+}
+
+.feature-card h1 {
+    font-size: 1.8rem;
+    margin-top: 25px; /* add some space between the image and heading */
+}
+
+.feature-card button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px; /* add a rounded corner to the button */
+    cursor: pointer; /* add a pointer cursor on hover */
+}
+
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+
+footer{
+    text-align: center;
+}
