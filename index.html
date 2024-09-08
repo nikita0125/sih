@@ -3,45 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Guidance Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Career Guidance</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Already have a career goal in mind? Explore your path with these exciting options below!</h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
             </div>
-        </section>
-        <section class="features">
-            <div class="feature-cards">
-                <div class="feature-card">
-                    <img src="roadmap.jpg" alt="Explore any Career Option through Interactive Roadmap">
-                    <h1>Explore Your Career Options</h1>
-                    <p>Interactive roadmap featuring dynamic visualization to help you discover your ideal career path and related career opportunities in an personalized way.</p>
-                    <button class="button-71">Get Started</button>
-                </div>
-                <div class="feature-card">
-                    <img src="connect.jpg" alt="ExpertConnect Hub">
-                    <h1>ExpertConnect Hub</h1>
-                    <p>Connect with professionals from various fields using our ExpertConnect Hub for real-time, interest-aligned workshops
-                        and virtual meetings to gain valuable experience and insights.</p>
-                    <button class="button-71">Connect Now</button>
-                </div>
-                <div class="feature-card">
-                    <img src="resource.jpg" alt="Awareness Portal">
-                    <h1>Awareness Portal</h1>
-                    <p>Extensive resources to help you achieve your career goals, offering comprehensive information on choosing the right subject,
-                        entrance exams, the benefits of internships,and more, all in one
-                        place .</p>
-                    <button class="button-71">Learn More</button>
-                </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" id="loginLink"><i class="fa-solid fa-user"></i>Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <!-- <a href="profile.html">Profile</a> -->
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="middle">
+        <div class="contentOne">
+            <p>Your Career Journey Starts Here .....!</p>
+            <div class="contentOne_p">
+                <div id="openQuiz">No idea about your interest or skills <i class="fa-brands fa-leanpub"></i>?</div>
+                <div>Already decided on your skills or interest..</div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Career Guidance Website</p>
-    </footer>
+        </div>
+        <div class="imgone"></div>
+    </div>
+
+    <!-- Hidden login form -->
+    <div id="loginModal" class="hidden">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Student Login</h1>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="class">Class</label>
+                        <input type="text" id="class" name="class" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email (optional)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone No (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="parentEmail">Parent's Email</label>
+                        <input type="email" id="parentEmail" name="parentEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="parentPhone">Parent's Phone No</label>
+                        <input type="tel" id="parentPhone" name="parentPhone" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- Main content sections -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Already have a career goal in mind? Explore your path with these exciting options below!</h1>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="roadmap.jpg" alt="Explore any Career Option through Interactive Roadmap">
+                <h1>Explore Your Career Options</h1>
+                <p>Interactive roadmap featuring dynamic visualization to help you discover your ideal career path and related career opportunities in a personalized way.</p>
+                
+            <button  class="button-71">Explore Careers</button>
+            </div>
+            <div class="feature-card">
+                <img src="connect.jpg" alt="ExpertConnect Hub">
+                <h1>ExpertConnect Hub</h1>
+                <p>Connect with professionals from various fields using our ExpertConnect Hub for real-time, interest-aligned workshops
+                    and virtual meetings to gain valuable experience and insights.</p>
+                <button class="button-71">Connect Now</button>
+            </div>
+            <div class="feature-card">
+                <img src="resource.jpg" alt="Awareness Portal">
+                <h1>Awareness Portal</h1>
+                <p>Extensive resources to help you achieve your career goals, offering comprehensive information on choosing the right subject,
+                    entrance exams, the benefits of internships, and more, all in one
+                    place.</p>
+                <button class="button-71">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+        // Open the quiz when clicking on the undecided section
+        document.getElementById('openQuiz').addEventListener('click', function() {
+            window.location.href = 'quiz.html';
+        });
+    </script>
 </body>
 </html>
+
+
